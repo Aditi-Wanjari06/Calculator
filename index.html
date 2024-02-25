@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        @font-face {
+            font-family: 'DS-Digital Normal';
+            font-style: normal;
+            font-weight: normal;
+            src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+        }
+
+        .calculator-body {
+            height: 330px;
+            width: 250px;
+            background-color:#3d3d5c;
+            margin: 20px auto;
+            border-radius: 20px;
+            padding: 20px;
+            padding-top: 40px;
+        }
+
+        .screen {
+            background-color: white;
+            text-align: right;
+            width: 220px;
+            display: block;
+            margin: 0 auto;
+            font-size: 50px;
+            padding: 5px 10px;
+            margin-bottom: 20px;
+            font-family: DS-Digital Normal;
+            
+        }
+
+        .buttons-container {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .btn {
+            width: 50px;
+            text-align: center;
+            padding: 2px 0;
+            font-size: 24px;
+            margin: 3px;
+            border: 0.5px solid black;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: 10%;
+            border: none;
+            
+            
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 7px 0 #fff;
+            transition: 0.5s;
+        }
+
+        .item {
+            background-color: rgb(0, 153, 255);
+        
+            color: white;
+        }
+
+        .red {
+            background-color: rgba(255, 0, 0, 0.562);
+            color: white;
+        }
+
+        span{
+            color: #fff;
+            font-size: 30px;
+            position: relative;
+            bottom: 10px;
+            left: 3px
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator-body">
+        <span>CASIO</span>
+        <input type="text" value="0" class="screen" />
+
+        <div class="buttons-container">
+            <button class="btn red">CE</button>
+            <button class="btn">7</button>
+            <button class="btn">4</button>
+            <button class="btn">1</button>
+            <button class="btn">.</button>
+
+            <button class="btn">C</button>
+            <button class="btn">8</button>
+            <button class="btn">5</button>
+            <button class="btn">2</button>
+            <button class="btn">0</button>
+
+            <button class="btn">M+</button>
+            <button class="btn">9</button>
+            <button class="btn">6</button>
+            <button class="btn">3</button>
+            <button class="btn">%</button>
+
+            <button class="btn item">X</button>
+            <button class="btn item">-</button>
+            <button class="btn item">+</button>
+            <button class="btn item">/</button>
+            <button class="btn item">=</button>
+
+        </div>
+    </div>
+</body>
+</html>
